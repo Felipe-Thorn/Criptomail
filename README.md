@@ -9,9 +9,17 @@ Usando criptografia no envio de um e-mail.
 * Algoritmo de criptografia: AES 
 
 ## O que fazer
-- Implementar uso do g-mail através da aplicação.
-- Gerar chaves pública e privada. Um par para o Remetente e um para o destinatário
-- Publicar as chaves públicas em algum lugar.
+- Implementar uso do g-mail através da aplicação. - FEITO
+- Gerar chaves pública e privada. Um par para o Remetente e um para o destinatário. - FEITO
+- Publicar as chaves públicas em algum lugar. - FEITO
+- Calcular o Hash MD5 da mensagem (com a chave privada do remetente).
+- Gerar uma chave simétrica. 
+- Criptografar o arquivo usando AES com a chave simétrica gerada.
+- Criptografar a chave simétrica a partir da chave pública do destinatário.
+- Descriptografar a chave simétrica usando a chave privada do destinatário.
+- Descriptografar a mensagem com a chave simétrica descriptografada.
+- Desfazer o Hash MD5 da mensagem descriptografada (com a chave publica do remetente).
+
 
 
 ### **Gerar Arquivo - Remetente**
